@@ -1,0 +1,91 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#viysko {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 75px;
+    background-color: rgb(61, 173, 117);
+    z-index: -1;
+}
+
+#hrudnya {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 75px;
+    z-index: 1;
+    color: black;
+    background-color: rgba(224, 240, 152, 1);
+    animation: Hrudnya 4s infinite;
+}
+
+@keyframes Hrudnya {
+    0% {background-color: rgba(224, 240, 152, 1)}
+    25% {background-color: rgba(224, 240, 152, 1)}
+    50% {color: rgba(0,0,0,0); background-color: rgba(224, 240, 152, 0)}
+    66% {color: rgba(0,0,0,0); background-color: rgba(224, 240, 152, 0)}
+    100% {background-color: rgba(224, 240, 152, 1)}
+}
+
+#smallNav {
+    position: fixed;
+    top: 95px;
+    left: 50%;
+    margin-left: -350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    list-style-type: none;
+    width: 700px;
+    height: 20px;
+}
+
+#smallNav a {
+    text-decoration: none;
+    font-family: arial;
+    font-size: 0.6em;
+    font-weight: 900;
+}
+
+#bigNav {
+    position: fixed;
+    top: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    width: 100vw;
+    height: 75px;
+    background-color: rgb(102, 12, 12);
+}
+
+#bigNav li {
+    text-align: center;
+}
+
+#bigNav a {
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 900;
+    color: white;
+}
+
+#club {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
