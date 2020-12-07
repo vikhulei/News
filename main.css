@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: arial;
 }
 
 #viysko {
@@ -11,9 +12,10 @@
     align-items: center;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 99vw;
     height: 75px;
-    background-color: rgb(61, 173, 117);
+    background-color: rgb(65, 81, 65);
+    color: white;
     z-index: -1;
 }
 
@@ -24,68 +26,169 @@
     align-items: center;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 99vw;
     height: 75px;
     z-index: 1;
-    color: black;
-    background-color: rgba(224, 240, 152, 1);
+    color: rgb(255, 255, 255);
+    background-color: rgb(116, 153, 116);
     animation: Hrudnya 4s infinite;
 }
 
 @keyframes Hrudnya {
-    0% {background-color: rgba(224, 240, 152, 1)}
-    25% {background-color: rgba(224, 240, 152, 1)}
-    50% {color: rgba(0,0,0,0); background-color: rgba(224, 240, 152, 0)}
-    66% {color: rgba(0,0,0,0); background-color: rgba(224, 240, 152, 0)}
-    100% {background-color: rgba(224, 240, 152, 1)}
+    0% {background-color: rgba(116, 153, 116)}
+    25% {background-color: rgba(116, 153, 116)}
+    50% {color: rgba(0,0,0,0); background-color: rgba(116, 153, 116, 0)}
+    66% {color: rgba(0,0,0,0); background-color: rgba(116, 153, 116, 0)}
+    100% {background-color: rgba(116, 153, 116, 0)}
+}
+
+#greyStripe {
+    position: fixed;
+    top: 75px;
+    height: 18px;
+    width: 100vw;
+    background-color: rgb(244, 245, 247);
 }
 
 #smallNav {
     position: fixed;
-    top: 95px;
-    left: 50%;
-    margin-left: -350px;
+    top: 93px;
+    width: 100vw;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    background-color: white;
+}
+
+#smallNav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-transform: uppercase;
     list-style-type: none;
     width: 700px;
-    height: 20px;
+    height: 100%;
 }
 
 #smallNav a {
     text-decoration: none;
-    font-family: arial;
-    font-size: 0.6em;
+    font-size: 0.7em;
     font-weight: 900;
+    color: black;
+}
+
+#smallNav li:first-of-type a {
+    color: rgb(167, 3, 3);
 }
 
 #bigNav {
     position: fixed;
-    top: 120px;
+    top: 128px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
-    width: 100vw;
-    height: 75px;
-    background-color: rgb(102, 12, 12);
+    width: 98.5vw;
+    height: 87px;
+    background-color: rgb(126, 0, 25);
 }
 
 #bigNav li {
     text-align: center;
 }
 
-#bigNav a {
+#bigNav li:first-of-type {
+    width: 180px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+#bigNav a, #bigNav p {
     text-decoration: none;
-    font-size: 1em;
+    font-size: 0.8em;
     font-weight: 900;
     color: white;
+    text-transform: uppercase;
+}
+
+#pravda a {
+    font-size: 2.2em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#pravda p {
+    font-weight: normal;
 }
 
 #club {
-    width: 150px;
+    width: 180px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+    height: 100%;
+}
+
+#ukr {
+    color: rgba(235, 192, 227, 0.411);
+}
+
+#bp {
+    width: 90px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(179, 12, 29);
+    border: 3px solid white;
+    border-radius: 40px;
+}
+
+#bp:hover {
+    color: rgb(241, 212, 212);
+    border-color: rgb(241, 212, 212);
+}
+
+#smallNav2 {
+    position: fixed;
+    top: 215px;
+    width: 100vw;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    background-color: white;
+    border-bottom: 2px solid lightgrey;
+}
+
+#smallNav2 ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    list-style-type: none;
+    width: 900px;
+    height: 100%; 
+}
+
+
+#smallNav2 a {
+    text-decoration: none;
+    font-size: 0.82em;
+    font-weight: 900;
+    color: black;
+}
+
+#smallNav2 li:first-of-type a {
+    color: rgb(167, 3, 3);
+}
+
+#test {
+    width: 80vw;
+    position: relative;
+    top: 300px;
+    color: black;
+    z-index: -20;
+    margin: 0 auto;
 }
