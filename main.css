@@ -184,11 +184,7 @@
     color: rgb(167, 3, 3);
 }
 
-#test {
-    width: 80vw;
+main {
     position: relative;
-    top: 300px;
-    color: black;
-    z-index: -20;
-    margin: 0 auto;
+    top: 280px;
 }
