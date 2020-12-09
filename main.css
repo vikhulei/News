@@ -187,4 +187,59 @@
 main {
     position: relative;
     top: 280px;
+    margin: 0 10px;
 }
+
+#covid {
+    text-decoration: none;
+    color: rgb(184, 20, 20);
+}
+
+#covidBlocks {
+    display: flex;
+    min-width: 1000px;
+    margin-top: 5px;
+    overflow-x: auto;
+}
+
+#covidBlocks img {
+    width: 100%;
+    border: 1px solid grey;
+    margin-right: 5px;
+}
+
+#covidBlocks img:last-of-type {
+    margin-right: 0;
+}
+
+main p {
+    font-size: 0.9em;
+    margin: 10px 0;
+}
+
+main > h4 {
+    color: rgb(184, 20, 20);
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+#firstContainer {
+    display: flex;
+    height: 600px;
+    background-color: lightgrey;
+    align-items: stretch;
+}
+
+#leftNews {
+    display: flex;
+    height: 100%;
+    background-color: lightpink;
+}
+
+#col1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
