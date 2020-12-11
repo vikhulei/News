@@ -112,12 +112,12 @@
     text-transform: uppercase;
 }
 
-#pravda a {
+#pravda > a {
     font-size: 2.2em;
     font-family: 'Times New Roman', Times, serif;
 }
 
-#pravda p {
+#pravda > p {
     font-weight: normal;
 }
 
@@ -184,9 +184,16 @@
     color: rgb(167, 3, 3);
 }
 
-main {
+#ttss {
     position: relative;
     top: 280px;
+}
+
+main {
+    position: absolute;
+    top: 280px;
+    left: 0;
+    right: 0;
     margin: 0 auto;
     padding: 0 10px;
     max-width: 1400px;
@@ -198,29 +205,41 @@ main {
     color: rgb(184, 20, 20);
 }
 
-#covidBlocks {
-    display: flex;
-    min-width: 1000px;
-    height: 90px;
-    margin-top: 5px;
+#covidContainer > p {
+    color: black;
+    font-size: 0.85em;
+}
+
+#covidContainer > h4 {
+    font-size: 0.8em;
 }
 
 #covidContainer {
-    overflow: hidden;
-    overflow-x: scroll;
+    margin-top: 10px;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#covidBlocks {
+    margin-top: 5px;
+    height: 80px;
+    width: 1380px;
+    display: flex;
+    justify-content: stretch;
 }
 
 #covidBlocks img {
-    width: 100%;
     border: 1px solid grey;
     margin-right: 5px;
+    width: 100%;
 }
 
 #covidBlocks img:last-of-type {
     margin-right: 0;
 }
 
-main p {
+main  p {
     font-size: 0.9em;
     margin: 10px 0;
 }
@@ -232,9 +251,9 @@ main > h4 {
 }
 
 #firstContainer {
-    margin-top: 20px;
     display: flex;
     height: 450px;
+    max-height: 40vw;
     align-items: stretch;
 }
 
@@ -243,6 +262,10 @@ main > h4 {
     color: black;
     font-size: 1.2em;
     text-align: justify;
+}
+
+#firstContainer h4 {
+    font-size: 0.85em;
 }
 
 #leftNews {
@@ -276,6 +299,16 @@ main > h4 {
     width: 100%;
 }
 
+#col2 h4 {
+    border-bottom: 2px solid grey;
+    padding-bottom: 10px;
+}
+
+#allNews > p {
+  font-size: 0.7em;
+  color: rgb(184, 20, 20);
+}
+
 #rightNews {
     flex: 1;
     margin-left: 10px;
@@ -292,4 +325,75 @@ main > h4 {
     justify-content: space-between;
 }
 
+#rightNews h4 {
+    font-size: 1.5em;
+    text-align: left;
+    font-weight: 800;
+    line-height: 1em;;
+}
 
+#rightNews p {
+    font-size: 0.6em;
+}
+
+#test {
+    margin: 100px;
+    width: 900px;
+    height: 200px;
+    background-color: rgb(197, 197, 118);
+    margin-bottom: 150px;
+    overflow: auto;
+}
+
+#test2 {
+    width: 1350px;
+    background-color: turquoise;
+}
+
+@media screen and (max-width: 800px) {
+    #smallNav {
+        display: none;
+    }
+
+    #usiRozdily {
+        display: none;
+    }
+
+    #hamMenu a {
+        color: black;
+    }
+
+    #hamMenu {
+        display: none;
+    }
+
+    #chckbox {
+        display: none;
+    }
+
+    #chckbox:checked ~ #hamMenu {
+        display: block;
+    }
+
+ #smallNav2 {
+     display: none;
+ }
+
+ #pravda a {
+     font-size: 1.5em;;
+ }
+
+ #pravda p {
+     display: none;
+ }
+
+ #club {
+    width: unset;
+    margin-right: 5px;
+ }
+
+ #club a:first-of-type {
+     display: none;
+ }
+
+}
